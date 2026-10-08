@@ -243,3 +243,35 @@ Se usa `how='inner'` para quedarse **solo con artistas que estan en ambos datase
 
 - **14,558 registros** unidos (de 89,740 Spotify x 4,647 Grammys)
 - Cada fila combina informacion del artista, su cancion, popularidad, categoria de Grammy y año
+
+---
+
+## Graficos Adicionales
+
+### Distribucion de Popularidad
+
+![Distribucion de Popularidad](screenshots/grafico_popularidad.png)
+
+### Top 10 Categorias con mas Grammys
+
+![Top 10 Categorias](screenshots/grafico_categorias.png)
+
+### Popularidad Promedio por Año
+
+![Popularidad por Año](screenshots/grafico_por_anio.png)
+
+---
+
+## Graficos Adicionales
+
+### Distribucion de Popularidad
+
+![Distribucion de Popularidad](screenshots/grafico_popularidad.png)
+
+### Top 10 Categorias con mas Grammys
+
+![Top 10 Categorias](screenshots/grafico_categorias.png)
+
+### Popularidad Promedio por Año
+
+![Popularidad por Año](screenshots/grafico_por_anio.png)
