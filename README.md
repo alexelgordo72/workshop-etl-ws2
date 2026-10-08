@@ -261,17 +261,3 @@ Se usa `how='inner'` para quedarse **solo con artistas que estan en ambos datase
 ![Popularidad por Año](screenshots/grafico_por_anio.png)
 
 ---
-
-## Graficos Adicionales
-
-### Distribucion de Popularidad
-
-![Distribucion de Popularidad](screenshots/grafico_popularidad.png)
-
-### Top 10 Categorias con mas Grammys
-
-![Top 10 Categorias](screenshots/grafico_categorias.png)
-
-### Popularidad Promedio por Año
-
-![Popularidad por Año](screenshots/grafico_por_anio.png)
