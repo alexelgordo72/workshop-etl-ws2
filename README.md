@@ -188,7 +188,7 @@ docker-compose run --rm -e POSTGRES_HOST=postgres_ws2 -e POSTGRES_PORT=5432 airf
 
 ## URLs y Accesos
 
-- Airflow UI: https://performs-powder-generic-speaks.trycloudflare.com
+- Airflow UI: https://equilibrium-palestinian-will-repairs.trycloudflare.com
 - Usuario: admin
 - Contraseña: admin
 - PostgreSQL WS2: localhost:5435
