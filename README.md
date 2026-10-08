@@ -213,3 +213,33 @@ Estudiante de Ingeniería de Datos e IA - 5to Semestre
 ---
 
 Proyecto desarrollado para el Workshop 002 de la materia ETL (G01)
+
+---
+
+## Logica del Merge
+
+### ¿Por que se une por artista?
+
+Ambos datasets tienen el nombre del artista como punto en comun:
+- **Spotify:** columna `artists` (plural) - ejemplo: "Billie Eilish"
+- **Grammys:** columna `artist` (singular) - ejemplo: "Billie Eilish"
+
+### Normalizacion aplicada
+
+Antes del merge, se normalizan ambos campos:
+
+1. **Convertir a minusculas:** "Billie Eilish" → "billie eilish"
+2. **Eliminar espacios extra:** " billie eilish " → "billie eilish"
+3. **Eliminar nulos:** descartar registros sin artista
+
+### Tipo de merge
+
+Se usa `how='inner'` para quedarse **solo con artistas que estan en ambos datasets**. Esto significa:
+- Si un artista gano un Grammy pero no tiene canciones en Spotify → NO aparece
+- Si un artista tiene canciones en Spotify pero no gano Grammy → NO aparece
+- Solo aparecen artistas que cumplen ambas condiciones
+
+### Resultado
+
+- **14,558 registros** unidos (de 89,740 Spotify x 4,647 Grammys)
+- Cada fila combina informacion del artista, su cancion, popularidad, categoria de Grammy y año
