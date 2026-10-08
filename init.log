@@ -1,0 +1,112 @@
+Creating network "workshop-etl-ws2_ws2_network" with driver "bridge"
+Creating volume "workshop-etl-ws2_ws2_postgres_data" with default driver
+Creating ws2_postgres ... 
+Creating ws2_postgres ... done
+Creating ws2_airflow_init ... 
+Creating ws2_airflow_init ... done
+Attaching to ws2_airflow_init
+[36mws2_airflow_init     |[0m /home/airflow/.local/lib/python3.11/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (6.0.0.post1)/charset_normalizer (3.4.5) doesn't match a supported version!
+[36mws2_airflow_init     |[0m   warnings.warn(
+[36mws2_airflow_init     |[0m Unable to load the config, contains a configuration error.
+[36mws2_airflow_init     |[0m Traceback (most recent call last):
+[36mws2_airflow_init     |[0m   File "/usr/local/lib/python3.11/pathlib.py", line 1116, in mkdir
+[36mws2_airflow_init     |[0m     os.mkdir(self, mode)
+[36mws2_airflow_init     |[0m FileNotFoundError: [Errno 2] No such file or directory: '/opt/airflow/logs/scheduler/2026-10-08'
+[36mws2_airflow_init     |[0m 
+[36mws2_airflow_init     |[0m During handling of the above exception, another exception occurred:
+[36mws2_airflow_init     |[0m 
+[36mws2_airflow_init     |[0m Traceback (most recent call last):
+[36mws2_airflow_init     |[0m   File "/usr/local/lib/python3.11/logging/config.py", line 573, in configure
+[36mws2_airflow_init     |[0m     handler = self.configure_handler(handlers[name])
+[36mws2_airflow_init     |[0m               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mws2_airflow_init     |[0m   File "/usr/local/lib/python3.11/logging/config.py", line 757, in configure_handler
+[36mws2_airflow_init     |[0m     result = factory(**kwargs)
+[36mws2_airflow_init     |[0m              ^^^^^^^^^^^^^^^^^
+[36mws2_airflow_init     |[0m   File "/home/airflow/.local/lib/python3.11/site-packages/airflow/utils/log/file_processor_handler.py", line 53, in __init__
+[36mws2_airflow_init     |[0m     Path(self._get_log_directory()).mkdir(parents=True, exist_ok=True)
+[36mws2_airflow_init     |[0m   File "/usr/local/lib/python3.11/pathlib.py", line 1120, in mkdir
+[36mws2_airflow_init     |[0m     self.parent.mkdir(parents=True, exist_ok=True)
+[36mws2_airflow_init     |[0m   File "/usr/local/lib/python3.11/pathlib.py", line 1116, in mkdir
+[36mws2_airflow_init     |[0m     os.mkdir(self, mode)
+[36mws2_airflow_init     |[0m PermissionError: [Errno 13] Permission denied: '/opt/airflow/logs/scheduler'
+[36mws2_airflow_init     |[0m 
+[36mws2_airflow_init     |[0m The above exception was the direct cause of the following exception:
+[36mws2_airflow_init     |[0m 
+[36mws2_airflow_init     |[0m Traceback (most recent call last):
+[36mws2_airflow_init     |[0m   File "/home/airflow/.local/bin/airflow", line 3, in <module>
+[36mws2_airflow_init     |[0m     from airflow.__main__ import main
+[36mws2_airflow_init     |[0m   File "/home/airflow/.local/lib/python3.11/site-packages/airflow/__init__.py", line 74, in <module>
+[36mws2_airflow_init     |[0m     settings.initialize()
+[36mws2_airflow_init     |[0m   File "/home/airflow/.local/lib/python3.11/site-packages/airflow/settings.py", line 789, in initialize
+[36mws2_airflow_init     |[0m     LOGGING_CLASS_PATH = configure_logging()
+[36mws2_airflow_init     |[0m                          ^^^^^^^^^^^^^^^^^^^
+[36mws2_airflow_init     |[0m   File "/home/airflow/.local/lib/python3.11/site-packages/airflow/logging_config.py", line 74, in configure_logging
+[36mws2_airflow_init     |[0m     raise e
+[36mws2_airflow_init     |[0m   File "/home/airflow/.local/lib/python3.11/site-packages/airflow/logging_config.py", line 69, in configure_logging
+[36mws2_airflow_init     |[0m     dictConfig(logging_config)
+[36mws2_airflow_init     |[0m   File "/usr/local/lib/python3.11/logging/config.py", line 823, in dictConfig
+[36mws2_airflow_init     |[0m     dictConfigClass(config).configure()
+[36mws2_airflow_init     |[0m   File "/usr/local/lib/python3.11/logging/config.py", line 580, in configure
+[36mws2_airflow_init     |[0m     raise ValueError('Unable to configure handler '
+[36mws2_airflow_init     |[0m ValueError: Unable to configure handler 'processor'
+[36mws2_airflow_init     |[0m /home/airflow/.local/lib/python3.11/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (6.0.0.post1)/charset_normalizer (3.4.5) doesn't match a supported version!
+[36mws2_airflow_init     |[0m   warnings.warn(
+[36mws2_airflow_init     |[0m Unable to load the config, contains a configuration error.
+[36mws2_airflow_init     |[0m Traceback (most recent call last):
+[36mws2_airflow_init     |[0m   File "/usr/local/lib/python3.11/pathlib.py", line 1116, in mkdir
+[36mws2_airflow_init     |[0m     os.mkdir(self, mode)
+[36mws2_airflow_init     |[0m FileNotFoundError: [Errno 2] No such file or directory: '/opt/airflow/logs/scheduler/2026-10-08'
+[36mws2_airflow_init     |[0m 
+[36mws2_airflow_init     |[0m During handling of the above exception, another exception occurred:
+[36mws2_airflow_init     |[0m 
+[36mws2_airflow_init     |[0m Traceback (most recent call last):
+[36mws2_airflow_init     |[0m   File "/usr/local/lib/python3.11/logging/config.py", line 573, in configure
+[36mws2_airflow_init     |[0m     handler = self.configure_handler(handlers[name])
+[36mws2_airflow_init     |[0m               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mws2_airflow_init     |[0m   File "/usr/local/lib/python3.11/logging/config.py", line 757, in configure_handler
+[36mws2_airflow_init     |[0m     result = factory(**kwargs)
+[36mws2_airflow_init     |[0m              ^^^^^^^^^^^^^^^^^
+[36mws2_airflow_init     |[0m   File "/home/airflow/.local/lib/python3.11/site-packages/airflow/utils/log/file_processor_handler.py", line 53, in __init__
+[36mws2_airflow_init     |[0m     Path(self._get_log_directory()).mkdir(parents=True, exist_ok=True)
+[36mws2_airflow_init     |[0m   File "/usr/local/lib/python3.11/pathlib.py", line 1120, in mkdir
+[36mws2_airflow_init     |[0m     self.parent.mkdir(parents=True, exist_ok=True)
+[36mws2_airflow_init     |[0m   File "/usr/local/lib/python3.11/pathlib.py", line 1116, in mkdir
+[36mws2_airflow_init     |[0m     os.mkdir(self, mode)
+[36mws2_airflow_init     |[0m PermissionError: [Errno 13] Permission denied: '/opt/airflow/logs/scheduler'
+[36mws2_airflow_init     |[0m 
+[36mws2_airflow_init     |[0m The above exception was the direct cause of the following exception:
+[36mws2_airflow_init     |[0m 
+[36mws2_airflow_init     |[0m Traceback (most recent call last):
+[36mws2_airflow_init     |[0m   File "/home/airflow/.local/bin/airflow", line 3, in <module>
+[36mws2_airflow_init     |[0m     from airflow.__main__ import main
+[36mws2_airflow_init     |[0m   File "/home/airflow/.local/lib/python3.11/site-packages/airflow/__init__.py", line 74, in <module>
+[36mws2_airflow_init     |[0m     settings.initialize()
+[36mws2_airflow_init     |[0m   File "/home/airflow/.local/lib/python3.11/site-packages/airflow/settings.py", line 789, in initialize
+[36mws2_airflow_init     |[0m     LOGGING_CLASS_PATH = configure_logging()
+[36mws2_airflow_init     |[0m                          ^^^^^^^^^^^^^^^^^^^
+[36mws2_airflow_init     |[0m   File "/home/airflow/.local/lib/python3.11/site-packages/airflow/logging_config.py", line 74, in configure_logging
+[36mws2_airflow_init     |[0m     raise e
+[36mws2_airflow_init     |[0m   File "/home/airflow/.local/lib/python3.11/site-packages/airflow/logging_config.py", line 69, in configure_logging
+[36mws2_airflow_init     |[0m     dictConfig(logging_config)
+[36mws2_airflow_init     |[0m   File "/usr/local/lib/python3.11/logging/config.py", line 823, in dictConfig
+[36mws2_airflow_init     |[0m     dictConfigClass(config).configure()
+[36mws2_airflow_init     |[0m   File "/usr/local/lib/python3.11/logging/config.py", line 580, in configure
+[36mws2_airflow_init     |[0m     raise ValueError('Unable to configure handler '
+[36mws2_airflow_init     |[0m ValueError: Unable to configure handler 'processor'
+[36mws2_airflow_init     |[0m ✅ Airflow inicializado correctamente
+Exception in thread Thread-6 (watch_events):
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/threading.py", line 1073, in _bootstrap_inner
+[36mws2_airflow_init exited with code 0
+[0m    self.run()
+  File "/usr/lib/python3.12/threading.py", line 1010, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib/python3/dist-packages/compose/cli/log_printer.py", line 202, in watch_events
+    for event in event_stream:
+  File "/usr/lib/python3/dist-packages/compose/project.py", line 626, in yield_loop
+    yield build_container_event(event)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/compose/project.py", line 594, in build_container_event
+    container = Container.from_id(self.client, event['id'])
+                                               ~~~~~^^^^^^
+KeyError: 'id'

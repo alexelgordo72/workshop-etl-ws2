@@ -1,0 +1,33 @@
+# Entorno
+.env
+.venv/
+venv/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Airflow
+logs/
+airflow.cfg
+airflow.db
+
+# Datos
+data/*.csv
+data/*.db
+data/*.sqlite
+data/*.json
+
+# Credenciales
+credentials/*.json
+credentials/*.pem
+
+# GCP
+gcp-key.json
+
+# Sistema
+.DS_Store
+Thumbs.db
