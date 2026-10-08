@@ -109,7 +109,6 @@ El DAG etl_spotify_grammys_pipeline tiene el siguiente flujo:
 
 ## Estructura del Proyecto
 
-```
 workshop-etl-ws2/
 ├── dags/
 │   └── etl_workshop.py
@@ -133,7 +132,6 @@ workshop-etl-ws2/
 ├── .env
 ├── .gitignore
 └── README.md
-```
 
 ---
 
